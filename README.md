@@ -8,7 +8,7 @@ Many people, including myself, share a passion to maintain a healthy lifestyle t
 
 ### Calorie Intake and Weight Changes
 - **How does my daily calorie intake correlate with fluctuations in my body weight?**
-- **Are there specific patterns or trends in calorie consumption that precede weight gain or loss?**
+- **Are there specific patterns or trends in calorie consumption that precede weight gain or loss?** 
 
 ### Physical Activity and Weight Management
 - **What is the relationship between my daily step count and changes in my weight?**
