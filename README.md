@@ -24,7 +24,7 @@ Many people, including myself, share a passion to maintain a healthy lifestyle t
 
 ## Data Description
 
-The dataset used for this project is comprised of personal health metrics collected consistently over **[the past 6 months]**. The data includes the following variables:
+The dataset used for this project is comprised of personal health metrics collected consistently over the past 6 months. The data includes the following variables:
 
 
 ### Calorie Intake
@@ -34,7 +34,7 @@ The dataset used for this project is comprised of personal health metrics collec
 
 ### Weight
 - **Description:** Body weight recorded daily.
-- **Unit:** Kilograms (kg) **
+- **Unit:** Kilograms (kg)
 - **Collection Method:** Measured using a digital scale each morning.
 
 ### Step Count
