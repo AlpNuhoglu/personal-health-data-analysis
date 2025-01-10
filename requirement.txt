@@ -1,21 +1,48 @@
-altair==5.2.0
-attrs==23.2.0
-certifi==2023.11.17
-charset-normalizer==3.3.2
-distfit==1.7.3
-joblib==1.3.2
-jsonschema==4.20.0
-matplotlib==3.8.2
-numpy==1.26.3
+# Core Data Manipulation and Analysis
 pandas==2.1.3
-pyparsing==3.1.1
+numpy==1.26.3
+scipy==1.11.4
 python-dateutil==2.8.2
 pytz==2024.2
-requests==2.31.0
-scikit-learn==1.3.0
-scipy==1.11.4
-seaborn==0.12.2
-statsmodels==0.14.1
-toolz==0.12.0
-typing-extensions==4.9.0
 tzdata==2024.2
+
+# Data Visualization
+matplotlib==3.8.2
+seaborn==0.12.2
+altair==5.2.0
+pyparsing==3.1.1
+
+# Machine Learning and Statistical Analysis
+scikit-learn==1.3.0
+statsmodels==0.14.1
+distfit==1.7.3
+
+# Interactive Widgets and Notebooks
+ipywidgets>=8.1.0
+jupyterlab>=4.0.0
+
+# Environment Management and Security
+python-dotenv>=1.0.0
+
+# Web and API Handling
+requests==2.31.0
+certifi==2023.11.17
+charset-normalizer==3.3.2
+
+# Miscellaneous and Utilities
+attrs==23.2.0
+toolz==0.12.0
+joblib==1.3.2
+typing-extensions==4.9.0
+
+# File Handling and Automation
+openpyxl>=3.1.0
+
+# Optional for Web Scraping and Automation
+requests>=2.31.0
+
+# Version Control and Project Management
+pre-commit>=3.5.0
+
+# Python Version Compatibility
+python_version >= "3.10"
