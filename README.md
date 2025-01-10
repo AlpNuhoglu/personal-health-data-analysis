@@ -156,7 +156,6 @@ In this repository, you will find:
 
 ### Data Limitations
 - **Small sample size** – The dataset covers only a limited timeframe, which may not capture longer-term patterns.  
-- **Potential inaccuracies** in manual logging of calories and gym attendance.
 
 ### Personal Limitations
 - **Individual metabolism** – Weight changes can be influenced by genetic factors, hydration, or untracked factors (e.g., stress, sleep).  
