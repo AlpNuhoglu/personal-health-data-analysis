@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> · Personal Health Data Analysis</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Alp Nuhoglu">
+<meta name="description" content="A comprehensive analysis of personal health metrics including calorie intake, step counts, and weight changes.">
+<meta name="keywords" content="[Health Fitness Data Analysis Visualization]">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Personal Health Data Analysis">
+  <meta name="twitter:description" content="A comprehensive analysis of personal health metrics including calorie intake, step counts, and weight changes.">
+
+<meta property="og:url" content="https://AlpNuhoglu.github.io/personal-health-website/analyses/">
+  <meta property="og:site_name" content="Personal Health Data Analysis">
+  <meta property="og:title" content="Personal Health Data Analysis">
+  <meta property="og:description" content="A comprehensive analysis of personal health metrics including calorie intake, step counts, and weight changes.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+
+
+
+<link rel="canonical" href="https://AlpNuhoglu.github.io/personal-health-website/analyses/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/personal-health-website/css/coder.min.ed30115a76cdaa62f2229e973d5b1c89b2d3dd4b1d9c07a729baad06aa3b0cbe.css" integrity="sha256-7TARWnbNqmLyIp6XPVscibLT3UsdnAenKbqtBqo7DL4=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link rel="alternate" type="application/rss+xml" href="/personal-health-website/analyses/index.xml" title="Personal Health Data Analysis" />
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://AlpNuhoglu.github.io/personal-health-website/">
+      Personal Health Data Analysis
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/personal-health-website/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/personal-health-website/analyses/">Analyses</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container list">
+  <header>
+    <h1 class="title">
+      <a class="title-link" href="https://AlpNuhoglu.github.io/personal-health-website/analyses/"></a>
+    </h1>
+  </header>
+  <h1 id="personal-health-data-analysis-report">
+  Personal Health Data Analysis Report
+  <a class="heading-link" href="#personal-health-data-analysis-report">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="introduction">
+  Introduction
+  <a class="heading-link" href="#introduction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>This project explores personal health metrics, focusing on daily weight, step counts, gym attendance, and calorie intake. The objective is to uncover insights and correlations between these variables to better understand their impact on health and fitness progress over time.</p>
+<hr>
+<h2 id="project-goals">
+  Project Goals
+  <a class="heading-link" href="#project-goals">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The primary goals of this analysis include:</p>
+<ul>
+<li>+Identifying correlations between calorie intake and weight changes.</li>
+<li>+Examining the relationship between step counts and weight management.</li>
+<li>+Analyzing the combined impact of calorie intake and physical activity.</li>
+<li>+Investigating temporal patterns and long-term trends in health metrics.</li>
+</ul>
+<hr>
+<h2 id="data-collection">
+  Data Collection
+  <a class="heading-link" href="#data-collection">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><strong>Data Sources:</strong></p>
+<ul>
+<li><strong>Weight:</strong> - Measured daily using a digital scale (kg).</li>
+<li><strong>Step Count:</strong> - Extracted from the Apple Health app.</li>
+<li><strong>Gym Attendance:</strong> - Manually labeled as Yes or No.</li>
+<li><strong>Calorie Intake:</strong> - Logged using MyFitnessPal.</li>
+</ul>
+<hr>
+<h2 id="data-processing">
+  Data Processing
+  <a class="heading-link" href="#data-processing">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The data underwent preprocessing steps to ensure accuracy and consistency:</p>
+<ul>
+<li><strong>Data Cleaning:</strong> Missing values were imputed or removed.</li>
+<li><strong>Feature Engineering:</strong> Rolling averages and weight fluctuations were calculated.</li>
+<li><strong>Time-Series Alignment:</strong> Consistent chronological ordering was ensured.</li>
+</ul>
+<hr>
+<p><img src="image-4.png" alt="alt text"></p>
+<h2 id="exploratory-data-analysis-eda">
+  Exploratory Data Analysis (EDA)
+  <a class="heading-link" href="#exploratory-data-analysis-eda">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="calorie-intake-vs-weight-changes">
+  Calorie Intake vs. Weight Changes
+  <a class="heading-link" href="#calorie-intake-vs-weight-changes">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Research Aim: How does daily calorie intake correlate with fluctuations in body weight?</strong></p>
+<p><strong>Hypothesis:</strong>
+Null Hypothesis (H0): No significant correlation between daily calorie intake and weight.
+Alternative Hypothesis (H1): A significant correlation exists.</p>
+<p><strong>Observation:</strong></p>
+<ul>
+<li>
+<p>The correlation (Weight vs. Calories) is around 0.25. This indicates a mild positive correlation. If the p-value is above 0.05, it is not statistically significant.</p>
+</li>
+<li>
+<p>The correlation with previous-day calories is 0.32, that might be a stronger relationship. This suggests that day-lagged calories might align better with weight changes.</p>
+</li>
+<li>
+<p>A mild or moderate correlation (0.20–0.40) indicates a positive trend, but not extremely strong. I would need to confirm significance with a formal test if desired.</p>
+</li>
+</ul>
+<p><img src="image-1.png" alt="alt text">
+Pearson correlation (Today Weight vs. Previous-Day Calories): 0.323</p>
+<h3 id="physical-activity--weight-management">
+  Physical Activity &amp; Weight Management
+  <a class="heading-link" href="#physical-activity--weight-management">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Research Aim: Does increased physical activity (steps, gym visits) contribute to weight loss or maintenance?</strong></p>
+<p><strong>Hypothesis:</strong>
+Null (H0): Weight is the same regardless of step count or gym attendance.
+Alternative (H1): Weight differs on high vs. low step days or gym vs. no-gym days.</p>
+<ul>
+<li><strong>Observation:</strong></li>
+<li>Gym vs. No-Gym:</li>
+<li>T-stat: -0.624, p-value: 0.537</li>
+</ul>
+<p>Correlation (Steps vs. Weight): -0.091</p>
+<p>High-Step vs. Low-Step:
+T-stat: -0.087, p-value: 0.932</p>
+<ul>
+<li>
+<p><strong>Interpretation:</strong></p>
+</li>
+<li>
+<p>Gym vs. No-Gym:
+p-value &gt; 0.05, we cannot reject H0. This means the difference in average weight on gym vs. no-gym days is not statistically significant. Perhaps gym attendance did not drastically shift weight in this timeframe.</p>
+</li>
+<li>
+<p>Correlation (Steps vs. Weight):
+A negative correlation around -0.09 suggests a weak negative relationship. p &gt; 0.05, again it’s not significant.</p>
+</li>
+<li>
+<p>High-Step vs. Low-Step:
+T-stat is very small (p &raquo; 0.05), no significant difference in weight. This implies that, within the observed data, simply having more steps does not guarantee a significantly lower (or different) weight.</p>
+</li>
+</ul>
+<p><img src="image-5.png" alt="alt text"></p>
+<h3 id="interplay-between-calorie-intake--physical-activity">
+  Interplay Between Calorie Intake &amp; Physical Activity
+  <a class="heading-link" href="#interplay-between-calorie-intake--physical-activity">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Research Aim: How do calorie intake and step count interact to influence weight?</strong></p>
+<p><strong>Hypothesis:</strong>
+Null (H0): Weight is not better explained by combining both variables than by either alone.
+Alternative (H1): A multiple regression (Calorie + Step_count) is a better model.</p>
+<ul>
+<li><strong>Observation:</strong></li>
+<li>OLS Regression Results                         <br>
+==============================================================================
+Dep. Variable:             Weight(kg)   R-squared:                       0.079
+Model:                            OLS   Adj. R-squared:                  0.033
+Method:                 Least Squares   F-statistic:                     1.717
+Date:                Fri, 10 Jan 2025   Prob (F-statistic):              0.193
+Time:                        11:51:13   Log-Likelihood:                -92.562
+No. Observations:                  43   AIC:                             191.1
+Df Residuals:                      40   BIC:                             196.4
+Df Model:                           2                                      <br>
+Covariance Type:            nonrobust                                      <br>
+=================================================================================
+coef    std err          t      P&gt;|t|      [0.025      0.975]</li>
+</ul>
+<hr>
+<p><img src="image-3.png" alt="alt text"></p>
+<ul>
+<li><strong>Interpretation:</strong></li>
+<li>Detailed Interpretation:
+R-squared: It’s around 0.08, that’s only ~8% of weight variance explained by these two factors. This is low—suggesting we need more features (sleep, hydration, etc.) to predict weight.
+Coefficients:
+Calorie(kcal) has a p-value ~ 0.09, it’s not significant (p &gt; 0.05), meaning no strong evidence that calories alone strongly predict weight within this dataset.
+Step_count is also p &gt; 0.05, it suggests no significant partial effect when controlling for calories. Possibly an extremely mild effect.
+Conclusion: The model may not strongly explain weight changes. Real-world weight fluctuation can be more complex.</li>
+</ul>
+<h3 id="temporal-patterns-and-trends">
+  Temporal Patterns and Trends
+  <a class="heading-link" href="#temporal-patterns-and-trends">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Research Aim: Are there weekday/weekend differences?</strong>
+<strong>Hypothesis:</strong>
+Null (H0): No difference in average weight between weekday and weekend.
+Alternative (H1): A difference exists.</p>
+<ul>
+<li><strong>Observation:</strong> Calorie intake is higher during weekends, while step counts are lower.</li>
+</ul>
+<p><img src="image-2.png" alt="alt text"></p>
+<ul>
+<li><strong>Interpretation:</strong></li>
+<li>p-value ~ 0.60, not significant. We cannot conclude that weekend weight differs from weekday weight in a statistically meaningful way.</li>
+<li>If p-value &lt; 0.05, we might have result in a real difference. A T-stat &lt; 1, with a large p-value, typically indicates negligible difference.</li>
+</ul>
+<hr>
+<h2 id="data-analysis-and-findings">
+  Data Analysis and Findings
+  <a class="heading-link" href="#data-analysis-and-findings">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="weight-changes-over-time">
+  Weight Changes Over Time
+  <a class="heading-link" href="#weight-changes-over-time">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><strong>Trend:</strong> Weight fluctuates within a range but generally stabilizes over longer periods.</li>
+</ul>
+<h3 id="gym-attendance">
+  Gym Attendance
+  <a class="heading-link" href="#gym-attendance">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Hypothesis:</strong> Regular gym attendance correlates with weight stability.</p>
+<ul>
+<li><strong>Observation:</strong> No direct correlation between gym days and significant weight change was found.</li>
+</ul>
+<h3 id="correlation-matrix">
+  Correlation Matrix
+  <a class="heading-link" href="#correlation-matrix">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><strong>Positive Correlation:</strong> Calorie intake and weight.</li>
+<li><strong>Negative Correlation:</strong> Step counts and weight fluctuations.</li>
+</ul>
+<hr>
+<h2 id="findings-and-insights">
+  Findings and Insights
+  <a class="heading-link" href="#findings-and-insights">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="key-insights">
+  Key Insights:
+  <a class="heading-link" href="#key-insights">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><strong>Calorie intake</strong> has a moderate positive correlation with weight changes.</li>
+<li><strong>Step counts alone</strong> do not significantly drive weight loss but help with stability.</li>
+<li><strong>Gym attendance</strong> alone does not impact weight fluctuations significantly.</li>
+<li><strong>Balanced calorie intake and activity</strong> show the most effective weight stability.</li>
+</ul>
+<hr>
+<h2 id="conclusion">
+  Conclusion
+  <a class="heading-link" href="#conclusion">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>This personal health data analysis provides valuable insights into how calorie intake, step counts, and gym attendance influence body weight. While individual variables showed moderate correlations, a balanced approach combining calorie control and activity seems most effective.</p>
+<h3 id="future-directions">
+  Future Directions:
+  <a class="heading-link" href="#future-directions">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><strong>Extended Data Collection:</strong> Longer periods for better generalization.</li>
+<li><strong>Advanced Modeling:</strong> Implementing machine learning models for predictive analysis.</li>
+<li><strong>Additional Metrics:</strong> Adding sleep, hydration, and stress data for a more holistic view.</li>
+</ul>
+<hr>
+<p><strong>Thank you for exploring this project.</strong> Feel free to contribute or provide feedback!</p>
+
+  <ul>
+    
+  </ul>
+  
+
+
+
+
+
+
+</section>
+
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+     Alp Nuhoglu 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/personal-health-website/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
