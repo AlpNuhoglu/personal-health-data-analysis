@@ -1,35 +1,20 @@
 """
-extract_macplus_attendance.py
+extract_macplus_attendance_script.py
 
 Detailed sample script for a scenario where MAC+ attendance logs are stored
-in a local CSV file (gym_attendance.csv) that the user (John Doe) updates manually.
+in a local CSV file (gym_attendance.csv) that the updates manually by myself.
 
 Usage:
   1. Place 'gym_attendance.csv' in a local '.gitignored' folder (e.g., './data/')
      to ensure it is never committed to your public repository.
   2. (Optional) Create an '.env' file to store MACFIT credentials or tokens
      if you decide to automate retrieval in the future. The file is also ignored.
-  3. Import this script and call 'fetch_gym_attendance()' in your main analysis
-     notebook (e.g., 'data_analysis.ipynb') to retrieve attendance data.
-  4. Merge or join this data with your daily logs (weight, steps, calorie intake).
+  3. Merge or join this data with your daily logs (weight, steps, calorie intake).
 
 Note:
   - This approach preserves privacy: your script logic is public, but your actual
     attendance records and any login credentials remain private and never pushed.
-
-Example .gitignore snippet:
-  data/
-  .env
-  *.csv
-  *.xlsx
-
-Sample CSV Structure (gym_attendance.csv):
-  date,gym,notes
-  2025-01-15,Yes,"Morning workout"
-  2025-01-16,No,
-  2025-01-17,Yes,"Evening cardio"
-
-Author: John Doe
+  
 """
 
 import os
@@ -68,11 +53,10 @@ def fetch_gym_attendance(csv_path: str = "data/gym_attendance.csv"):
        empty list so that your analysis script can handle missing data gracefully.
     """
 
-    # OPTIONAL: For future automation, load environment variables here if needed
-    # load_dotenv()
-    # user = os.getenv("MACFIT_USER")
-    # password = os.getenv("MACFIT_PASS")
-    # (For now, we rely on a local CSV, so no direct login is performed.)
+   
+    load_dotenv()
+    user = os.getenv("MACFIT_USER")
+    password = os.getenv("MACFIT_PASS")
 
     attendance_records = []
 
