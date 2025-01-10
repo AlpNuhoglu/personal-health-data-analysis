@@ -78,7 +78,7 @@ In this repository, you will find:
 
 ## Data Source
 - **Personal weight** measured daily with a digital scale (units: kilograms).  
-- **Step count** logged automatically via a wearable device or smartphone.  
+- **Step count** extracted from the health program which is embedded in iphone device.  
 - **Gym attendance** manually labeled as “Yes” or left blank for non-attendance.  
 - **Calorie (kcal)** intake logged through a calorie-counting application (manual data entry).
 
