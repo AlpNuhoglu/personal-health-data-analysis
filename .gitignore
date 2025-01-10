@@ -1,0 +1,140 @@
+# ---------------------------
+# Personal Health Data Privacy
+# ---------------------------
+
+# Ignore raw data files containing personal health data
+data/
+*.csv
+*.xlsx
+*.json
+*.xml
+*.sql
+*.db
+*.sqlite
+
+# Ignore manually entered data files for gym attendance
+gym_attendance.csv
+attendance_logs/
+
+# Ignore mobile app exports and fitness logs
+exports/
+*.gpx
+*.fit
+*.tcx
+
+# ---------------------------
+# Security and Sensitive Files
+# ---------------------------
+
+# Environment variables and credentials (for MAC+ integration)
+.env
+*.env
+*.token
+secrets.json
+
+# ---------------------------
+# Jupyter Notebook and Checkpoints
+# ---------------------------
+
+# Ignore Jupyter Notebook checkpoints and temporary files
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+__pycache__/
+
+# ---------------------------
+# Virtual Environments and Package Management
+# ---------------------------
+
+# Ignore virtual environments created for Python projects
+venv/
+env/
+.venv/
+*.egg-info/
+*.whl
+
+# Ignore package managers and lock files (only if auto-generated)
+poetry.lock
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ---------------------------
+# Machine Learning Models and Outputs
+# ---------------------------
+
+# Ignore large machine learning models and serialized files
+models/
+*.pkl
+*.h5
+*.onnx
+*.joblib
+*.pb
+*.tflite
+
+# Ignore model evaluation metrics and temporary results
+results/
+*.metrics
+*.hdf5
+
+# ---------------------------
+# Figures, Visualizations, and Reports
+# ---------------------------
+
+# Ignore generated visualizations and exported figures
+figures/
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+*.html
+
+# ---------------------------
+# Compiled Files and Caches
+# ---------------------------
+
+# Python bytecode and compiled files
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dll
+*.o
+*.a
+*.out
+
+# Caches and temporary data
+__pycache__/
+*.tmp
+*.bak
+*.swp
+
+# ---------------------------
+# IDE and Editor Specific Files
+# ---------------------------
+
+# IDE settings and workspace configurations
+.vscode/
+.idea/
+*.code-workspace
+
+# ---------------------------
+# Unit Testing and Coverage
+# ---------------------------
+
+# Ignore testing artifacts and coverage reports
+coverage/
+*.cov
+.tox/
+.nox/
+test_output/
+
+# ---------------------------
+# Ignore Requirements and Auto-Generated Files
+# ---------------------------
+
+# Ignore requirements files if automatically generated
+requirements.txt
+
+# Ignore any backup or temporary scripts
+*.bak
+*.old
